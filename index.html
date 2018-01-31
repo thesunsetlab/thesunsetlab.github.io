@@ -6,22 +6,35 @@
     <meta property="og:site_name" content="The Sunset Lab"/>
     <meta property="og:url" content="http://thesunsetlab.com" />
     <meta property="og:description" content="The Sunset Lab website, featuring the latest the news and music releases." />
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
     <style media="screen" type="text/css">
+    html{
+        font-size: 100%
+    }
     body{
         margin:0;
         background: url(img/background.jpg) no-repeat center center fixed;
         background-size:cover;
-        font-size:12px;
+        font-size: 0.75em;
+        font-family: 'Roboto', sans-serif;
     }
     div.footer{
         position:fixed;
         width:100%;
         bottom:0;
     }
+    div.header{
+        position:fixed;
+        width:100%;
+        top:0;
+    }
     a{
-        width:4em;
-        height:4em;
+        width:2em;
+        height:2em;
         display:block;
+        font-size:2em;
+        text-decoration: none;
+        color: white;
     }
     ul{
         list-style:none;
@@ -35,12 +48,19 @@
     }
     @media only screen and (max-device-width : 480px) {
         body   {
-            font-size: 20px;
+            font-size: 1.25;
         }
     }
     </style>
 </head>
 <body bgcolor="#1b162c">
+<div class="header">
+    <ul>
+        <li><a href="" title="Home" style="width:100px">Home</a></li>
+        <li><a href="" title="Music" style="width:100px">Music</a></li>
+        <li><a href="" title="About" style="width:100px">About</a></li>
+    </ul>
+</div>
 <div class="footer">
     <ul>
         <li><a href="http://facebook.com/thesunsetlab.uk" title="Facebook"><svg fill="white" viewBox="0 0 512 512"><path d="M211.9 197.4h-36.7v59.9h36.7V433.1h70.5V256.5h49.2l5.2-59.1h-54.4c0 0 0-22.1 0-33.7 0-13.9 2.8-19.5 16.3-19.5 10.9 0 38.2 0 38.2 0V82.9c0 0-40.2 0-48.8 0 -52.5 0-76.1 23.1-76.1 67.3C211.9 188.8 211.9 197.4 211.9 197.4z"/></svg><!--[if lt IE 9]><em>Facebook</em><![endif]--></a></li>
